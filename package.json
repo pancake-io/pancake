@@ -1,5 +1,5 @@
 {
-    "name": "alfred",
+    "name": "pancakeio",
     "description": "A toolkit to host your files to a website.",
     "version": "1.0.0",
     "main": "./index.js",
