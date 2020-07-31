@@ -1,0 +1,11 @@
+{
+    "name": "alfred",
+    "description": "A toolkit to host your files to a website.",
+    "version": "1.0.0",
+    "main": "./index.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "glob": "^7.1.6",
+        "minimatch": "^3.0.4"
+    }
+}
