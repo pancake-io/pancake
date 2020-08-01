@@ -1,1 +1,1 @@
-web: node ./pancake
+web: node ./pancake serve
