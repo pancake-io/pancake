@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Alfred</title>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/styles/github.min.css">
+        <% if (it.isFile) { %>
+            <style>
+                body {
+                    font-family: 'Courier New', Courier, monospace;
+                }
+            </style>
+        <% } %>
+    </head>
+    <body>
+        <% if (it.isFile) { %>
+            <%~ E.include('contents', {}) %>
+        <% } else { %>
+            <table>
+                <% Object.keys(it.contents).forEach(key => { %>
+                    <br><tr><a href="<%= it.contents[key] %>"><%= key %></a></tr>
+                <% }) %>
+            </table>
+        <% } %>
+    </body>
+</html>
