@@ -1,11 +1,11 @@
 {
     "name": "pancakeio",
-    "description": "A toolkit to host your files to a website.",
+    "description": "Allow your users to easily browse your code without them having to download anything. ",
     "version": "1.0.0",
-    "main": "./index.js",
+    "main": "./lib/server.js",
     "homepage": "https://github.com/pancake-io/pancake#readme",
-    "bugs": { 
-        "url" : "https://github.com/pancake-io/pancake/issues"
+    "bugs": {
+        "url": "https://github.com/pancake-io/pancake/issues"
     },
     "author": {
         "name": "Zack Pace",
@@ -21,6 +21,6 @@
         "yargs": "^15.4.1"
     },
     "bin": {
-        "pancake": "./index"
+        "pancake": "./pancake"
     }
 }

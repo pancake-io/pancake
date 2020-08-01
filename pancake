@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const server = require('./lib/server');
+const yargs = require('yargs');
+const config = require('./package.json');
+
+yargs
+    .command('serve', 'Start the Pancake server.', (yargs) => {
+        yargs
+            .positional('port', {
+                describe: 'The port to run the server on.',
+                default: process.env.PORT ? process.env.PORT : 80
+            })
+            .positional('path', {
+                describe: 'A directory to serve.',
+                default: process.cwd()
+            })
+    }, (args) => {
+        server(args.path, args.port);
+    })
+    .version(config.version)
+    .help('h')
+    .argv
